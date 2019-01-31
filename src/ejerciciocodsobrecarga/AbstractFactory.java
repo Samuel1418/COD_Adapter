@@ -5,23 +5,20 @@
  */
 package ejerciciocodsobrecarga;
 
-import static ejerciciocodsobrecarga.IO.variableInt;
-import static ejerciciocodsobrecarga.IO.variableFloat;
-import static ejerciciocodsobrecarga.IO.variableString;
 
 /**
  *
  * @author Samuel
  */
-public class EjercicioCODSobrecarga {
+public class AbstractFactory {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
-     IO.introducir(variableString);
-     
+        Dialogo miDialogo = Dialogo.crearDialogo(Dialogo.Tipo.CONSOLA);
+        miDialogo.mostrar("Hola desde una consola");
+        Dialogo otroDialogo = Dialogo.crearDialogo(Dialogo.Tipo.VENTANA);
+        otroDialogo.mostrar("Hola desde una ventana");
     }
-    
 }
