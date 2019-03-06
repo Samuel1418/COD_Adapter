@@ -21,6 +21,12 @@ public class IO {
     public static float variableFloat;
     public static String variableString;
 
+    
+     /**
+     * Metodo para introducir un int por consola o ventana
+     * @param opciones Es un array para guardar los que queremos que muestre la ventana que nos preguntará que deseamos
+     * @param b va convertir la opcion elegida en un numero para así entrar en uno de los apartados del switch
+     */
     public static int introducir(int b) {
         String[] opciones={"CONSOLA","VENTANA"};
          b = JOptionPane.showOptionDialog(null,"Desea acceder por consola o por ventana?" ,null,JOptionPane.DEFAULT_OPTION,JOptionPane.QUESTION_MESSAGE,null,opciones,null);
@@ -40,7 +46,11 @@ public class IO {
         }
         return b;
     }
-
+     /**
+     * Metodo para introducir un float por consola o ventana
+     * @param opciones Es un array para guardar los que queremos que muestre la ventana que nos preguntará que deseamos
+     * @param f va convertir la opcion elegida en un numero para así entrar en uno de los apartados del switch
+     */
     public static float introducir(float f) {
         String[] opciones={"CONSOLA","VENTANA"};
          f = JOptionPane.showOptionDialog(null,"Desea acceder por consola o por ventana?" ,null,JOptionPane.DEFAULT_OPTION,JOptionPane.QUESTION_MESSAGE,null,opciones,null);
@@ -61,6 +71,11 @@ public class IO {
         return f;
     }
     
+    /**
+     * Metodo para introducir un String por consola o ventana
+     * @param opciones Es un array para guardar los que queremos que muestre la ventana que nos preguntará que deseamos
+     * @param o va convertir la opcion elegida en un numero para así entrar en uno de los apartados del switch
+     */
     public static String introducir(String g) {
         String[] opciones={"CONSOLA","VENTANA"};
         int o = 0;
@@ -82,7 +97,11 @@ public class IO {
         }
         return g;
     }
-    
+    /**
+     * Metodo para introducir un char por consola o ventana
+     * @param opciones Es un array para guardar los que queremos que muestre la ventana que nos preguntará que deseamos
+     * @param h va convertir la opcion elegida en un numero para así entrar en uno de los apartados del switch
+     */
     public static char introducir(char h) {
         String[] opciones={"CONSOLA","VENTANA"};
         h = (char) JOptionPane.showOptionDialog(null,"Desea acceder por consola o por ventana?" ,null,JOptionPane.DEFAULT_OPTION,JOptionPane.QUESTION_MESSAGE,null,opciones,null);
