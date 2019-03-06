@@ -64,7 +64,7 @@ public class IO {
 
             case 1:
                 JOptionPane.showMessageDialog(null, "Introduzca su variable tipo float");
-                float e = Float.parseFloat(JOptionPane.showInputDialog(null, "Ponga su int"));
+                float e = Float.parseFloat(JOptionPane.showInputDialog(null, "Ponga su float"));
                 JOptionPane.showMessageDialog(null, "Ha introducido la variable tipo float con valor: " + e);
                 break;
         }
@@ -90,9 +90,9 @@ public class IO {
                 break;
 
             case 1:
-                JOptionPane.showMessageDialog(null, "Introduzca su variable tipo float");
-                String e = JOptionPane.showInputDialog(null, "Ponga su int");
-                JOptionPane.showMessageDialog(null, "Ha introducido la variable tipo float con valor: " + e);
+                JOptionPane.showMessageDialog(null, "Introduzca su variable tipo String");
+                String e = JOptionPane.showInputDialog(null, "Ponga su String");
+                JOptionPane.showMessageDialog(null, "Ha introducido la variable tipo String con valor: " + e);
                 break;
         }
         return g;
@@ -108,14 +108,14 @@ public class IO {
         switch (h) {
 
             case 0:
-                System.out.println("Introduzca su variable tipo String");
+                System.out.println("Introduzca su variable tipo char");
                 String d = ler.next();
                 System.out.println("Ha introducidola variable tipo char con valor: " + d);
                 break;
 
             case 1:
-                JOptionPane.showMessageDialog(null, "Introduzca su variable tipo float");
-                String e = JOptionPane.showInputDialog(null, "Ponga su int");
+                JOptionPane.showMessageDialog(null, "Introduzca su variable tipo char");
+                String e = JOptionPane.showInputDialog(null, "Ponga su char");
                 JOptionPane.showMessageDialog(null, "Ha introducido la variable tipo char con valor: " + e);
                 break;
         }
