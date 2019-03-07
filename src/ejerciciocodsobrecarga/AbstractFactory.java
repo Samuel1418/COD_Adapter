@@ -10,7 +10,7 @@ package ejerciciocodsobrecarga;
  *
  * @author Samuel
  */
-public class AbstractFactory {
+public class AbstractFactory extends IO{
 
     /**
      * @param args the command line arguments
